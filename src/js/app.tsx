@@ -9,13 +9,14 @@ const urlParams = new URLSearchParams(window.location.search);
 const clockOnly = urlParams.get("clock-only");
 const customPage = urlParams.get("page");
 const customTimer = urlParams.get("timer");
+console.log(customTimer);
 
 export default function App() {
   const [page, setPage] = React.useState(
     clockOnly ? "countdown" : customPage || "start"
   );
   const [timer, setTimer] = React.useState(
-    Date.now() + (customTimer || 30) * 60 * 1000
+    Date.now() + (parseInt(customTimer, 10) || 30) * 60 * 1000
   );
 
   if (page === "start") {
@@ -23,7 +24,7 @@ export default function App() {
       <Start
         onStart={() => {
           setPage("countdown");
-          setTimer(Date.now() + 30 * 60 * 1000);
+          setTimer(Date.now() + (parseInt(customTimer, 10) || 30) * 60 * 1000);
         }}
       />
     );
