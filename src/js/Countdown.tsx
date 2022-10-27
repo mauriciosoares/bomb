@@ -40,6 +40,8 @@ export default function Root({ setPage, clockOnly, timer }) {
                 } else {
                   setError("WRONG PASSWORD!");
                 }
+
+                e.target.value = "";
               }
             }}
           />
