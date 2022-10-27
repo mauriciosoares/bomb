@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build --base=/bomb/"
   },
   "dependencies": {
     "@types/react": "^18.0.24",
