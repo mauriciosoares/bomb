@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background: #16151c;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      button {
+        padding: 20px;
+        font-size: 40px;
+        margin: auto;
+        display: block;
+      }
+
+      iframe {
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+
+      input {
+        background: #2a2631;
+        border: #0f1014;
+        border-radius: 5px;
+        color: white;
+      }
+
+      .countdown-wrapper {
+        width: 530px;
+      }
+
+      .clock {
+        font-family: Fira Code;
+        color: #c00;
+        text-shadow: 0 0 6px #c00;
+        font-size: 180px;
+      }
+
+      .password {
+        width: 100%;
+        padding: 20px;
+        font-size: 60px;
+      }
+
+      .error {
+        font-family: Fira Code;
+        color: #c00;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .bomb {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(/assets/timer-bomb.4f4733ee.png);
+        background-repeat: no-repeat;
+        background-size: 1000px;
+        background-position: center;
+      }
+
+      .clock-bomb {
+        background: #232021;
+        position: fixed;
+        top: 50%;
+        font-size: 114px;
+        left: 50%;
+        transform: translateX(-40%) translateY(-34%);
+        padding: 20px;
+        border-radius: 20px;
+      }
+
+      .wire-message {
+        font-family: Fira Code;
+        position: fixed;
+        color: white;
+        font-size: 40px;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-20%) translateY(-380%);
+      }
+
+      .wire {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        border: none;
+        cursor: pointer;
+        background: transparent;
+      }
+
+      .blue-wire {
+        width: 330px;
+        height: 270px;
+        transform: translateX(-143%) translateY(-84%);
+      }
+
+      .yellow-wire {
+        width: 210px;
+        height: 210px;
+        transform: translateX(-89%) translateY(56%);
+      }
+
+      .green-wire {
+        width: 250px;
+        height: 220px;
+        transform: translateX(93%) translateY(-13%);
+      }
+
+      .wire-message-Blue {
+        color: #0f66a9;
+      }
+
+      .wire-message-Yellow {
+        color: #fff900;
+      }
+
+      .wire-message-Green {
+        color: #128a4f;
+      }
+
+      .success {
+        font-size: 50px;
+        color: white;
+        font-family: Fira Code;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index.2373b744.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    
+  </body>
+</html>
